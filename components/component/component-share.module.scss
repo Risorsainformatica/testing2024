@@ -1,0 +1,51 @@
+.share{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px 0;
+    @media (max-width: 991px){
+        padding: 10px 20px 20px 20px;
+    }
+    &.white{
+        padding: 0;
+    }
+    &__wrapper{
+        width: 100%;
+        max-width: 1010px;
+        display: flex;
+        flex-flow: column;
+        &__row{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            h5{
+                font-weight: 300;
+                margin-bottom: 20px;
+                @media all and (max-width: 768px) {  
+                    display: none;
+                }
+            }
+        }
+    }
+    &__icon{
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media all and (max-width: 768px) {  
+            margin: 0 5px;
+            width: 25px;
+            height: 25px;
+        }
+        img{
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}
